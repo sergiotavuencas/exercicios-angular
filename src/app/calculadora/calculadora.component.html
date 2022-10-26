@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="number" placeholder="Primeiro Valor" name="primeiroValor" [(ngModel)]="primeiroValor">
+        </div>
+        <div class="col-md-12">
+            <input type="number" placeholder="Segundo Valor" name="segundoValor" [(ngModel)]="segundoValor">
+        </div>
+        <div class="col-md-12">
+            <input type="number" placeholder="Resultado" name="resultado" [(ngModel)]="resultado">
+        </div>
+        <div class="col-md-12">
+            <button (click)="somar()">Somar</button>
+            <button (click)="subtrair()">Subtrair</button>
+            <button (click)="multiplicar()">Multiplicar</button>
+            <button (click)="dividir()">Dividir</button>
+        </div>
+    </div>
+</div>

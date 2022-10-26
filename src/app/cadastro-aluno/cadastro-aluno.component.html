@@ -1,0 +1,25 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="row">
+            <div class="col-md-12">
+                <input placeholder="RA" name="ra" [(ngModel)]="ra" required>
+            </div>
+            <div class="col-md-12">
+                <input placeholder="Nome" name="nome" [(ngModel)]="nome" required>
+            </div>
+            <div class="col-md-12">
+                <input type="email" placeholder="E-mail" name="email" [(ngModel)]="email" required>            
+            </div>
+            <div class="col-md-12">
+                <input placeholder="Celular" name="celular" [(ngModel)]="celular" required>            
+            </div>
+            <div class="col-md-12">
+                <button>Cadastrar</button>
+            </div>
+        </div>
+    </form>
+    <div class="container">
+        <p>{{ form.value | json }}</p>
+        <p>{{ form.valid }}</p>
+    </div>
+</div>

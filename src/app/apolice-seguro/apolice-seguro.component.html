@@ -1,0 +1,25 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="row">
+            <div class="col-md-12">
+                <input placeholder="Nome" name="nome" [(ngModel)]="nome" required>
+            </div>
+            <div class="col-md-12">
+                <input placeholder="Sexo" name="sexo" [(ngModel)]="sexo" required>            
+            </div>
+            <div class="col-md-12">
+                <input type="number" placeholder="Idade" name="idade" [(ngModel)]="idade" required>            
+            </div>
+            <div class="col-md-12">
+                <input type="number" placeholder="Valor do Automóvel" name="valorAutomovel" [(ngModel)]="valorAutomovel" required>            
+            </div>
+            <div class="col-md-12">
+                <button>Calcular</button>
+            </div>
+        </div>
+    </form>
+    <div class="container">
+        <p>{{ form.value | json }}</p>
+        <p>{{ form.valid }}</p>
+    </div>
+</div>
